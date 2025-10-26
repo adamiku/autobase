@@ -18,8 +18,24 @@
     "enabled": true,
     "rules": {
       "recommended": true,
+      "a11y": {
+        "useFocusableInteractive": "warn",
+        "useSemanticElements": "warn",
+        "useAriaPropsForRole": "warn",
+        "noRedundantRoles": "warn",
+        "useKeyWithClickEvents": "warn"
+      },
+      "correctness": {
+        "useExhaustiveDependencies": "warn"
+      },
+      "security": {
+        "noDangerouslySetInnerHtml": "warn"
+      },
       "suspicious": {
-        "noUnknownAtRules": "off"
+        "noUnknownAtRules": "off",
+        "noArrayIndexKey": "warn",
+        "noDoubleEquals": "warn",
+        "noDocumentCookie": "warn"
       }
     },
     "domains": {
